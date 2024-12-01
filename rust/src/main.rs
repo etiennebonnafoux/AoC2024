@@ -1,3 +1,8 @@
+use std::fs;
+
 fn main() {
-    println!("Hello, world!");
+let mut content = String::new();
+content = fs::read_to_string("input_jour_un.txt").expect("Failed to read file");
+println!("{}",content)
 }
+
